@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalapakatti Biriyani - Food Order Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>THALAPAKATTI BIRIYANI</h1>
+        <p class="tagline">Authentic South Indian Cuisine</p>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <h2>Menu</h2>
+            <form action="process_order.cgi" method="POST">
+                <div class="menu-categories">
+                    <div class="category">
+                        <h3>Main Course</h3>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item1" name="item" value="1">
+                            <label for="item1">Biriyani</label>
+                            <span class="price">₹120</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item2" name="item" value="2">
+                            <label for="item2">Full Meals</label>
+                            <span class="price">₹100</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item3" name="item" value="3">
+                            <label for="item3">Mini Meal</label>
+                            <span class="price">₹80</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item4" name="item" value="4">
+                            <label for="item4">Parotta</label>
+                            <span class="price">₹15</span>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <h3>Side Dishes</h3>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item7" name="item" value="7">
+                            <label for="item7">Chicken Fry</label>
+                            <span class="price">₹200</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item8" name="item" value="8">
+                            <label for="item8">Fish Fry</label>
+                            <span class="price">₹150</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item9" name="item" value="9">
+                            <label for="item9">Paneer Butter Masala</label>
+                            <span class="price">₹120</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item10" name="item" value="10">
+                            <label for="item10">Paneer Tikka</label>
+                            <span class="price">₹100</span>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <h3>Beverages & Desserts</h3>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item5" name="item" value="5">
+                            <label for="item5">Soda</label>
+                            <span class="price">₹15</span>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="item6" name="item" value="6">
+                            <label for="item6">Ice Cream</label>
+                            <span class="price">₹50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="selected-items">
+                        <p>No items selected</p>
+                    </div>
+                    <div class="total">
+                        <p>Total: <span id="total-price">₹0</span></p>
+                    </div>
+                </div>
+
+                <button type="submit" class="order-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Thalapakatti Biriyani. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
